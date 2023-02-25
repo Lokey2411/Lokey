@@ -1,0 +1,108 @@
+.modal{
+    position: fixed;
+    /* position: relative; */
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0,0,0,0.4);
+    display: none;
+}
+
+.modal .container{
+    /* width:100%; */
+    /* height: fit-content; */
+    position: absolute;
+    bottom: 2%;
+    top:15%;
+    left: 15%;
+    right:15%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+
+}
+
+.modal .box{
+    width:100%;
+    height: fit-content;
+    min-height: 70%;
+    /* height: 470px; */
+    background-color: #fff;
+    
+}
+.modal .header{
+    /* height: 132px; */
+    width:100%;
+    background-color: #009688!important;
+    /* display: block; */
+    color:#fff;
+    text-align: center;
+    line-height: 132px;
+    letter-spacing: 4px;
+    font-size:25px;
+    /* display: flex; */
+}
+
+.modal .ticket-per-person{
+    width:100%;
+    top: 216px;
+    left: 225px;
+    /* background-color: red; */
+    color:#000;
+    text-align: left;
+}
+
+.modal .content{
+    width: 96%;
+    position: relative;
+    left: 2%;
+    padding-top: 10px;
+}
+
+.modal .content div,.modal .content input{
+    margin-top:10px;
+}
+
+.modal input{
+    width: 100%;
+    line-height: 300%;
+    border: 1px solid #ccc ;
+    background-color: #fff;
+    /* border: #000; */
+}
+
+.modal #Pay{
+    width: 100%;
+    line-height: 300%;
+    background-color: #009688;
+    color:#fff;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+#close{
+    width: 20%;
+    line-height: 300%;
+    background-color: red;
+    color:#fff;
+    cursor: pointer;
+}
+
+.right{
+    float:right;
+}
+
+.right a{
+    color:#2196F3;
+}
+
+.foot{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button:hover{
+    color: #000!important;
+    background-color: #ccc!important;
+}

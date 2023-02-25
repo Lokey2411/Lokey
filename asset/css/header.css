@@ -1,0 +1,28 @@
+#header{
+    height: 46px;
+    width: 100%;
+    background-color: #C60000;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#header .search-button{
+    float: right;
+    line-height: 46px;
+    padding:0 21px ;
+    font-size: 20px;
+}
+
+#header .search-button:hover{
+    color: #fff;
+    background-color: black;
+    cursor: pointer;
+}
+
+#header .search-icon{ 
+    color:yellow;
+    font-size: 20px;
+}

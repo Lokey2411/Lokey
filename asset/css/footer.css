@@ -1,0 +1,15 @@
+#footer{
+ width: 100%;
+}
+
+#footer img{
+    width: 100%;
+}
+
+#footer .copyright{
+    height: 100px;
+    width: 60%;
+    margin:auto;
+    text-align: center;
+    line-height: 50px;
+}

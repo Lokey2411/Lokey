@@ -1,0 +1,63 @@
+#nav{
+    display: inline-block;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav li
+{
+
+    position: relative;
+}
+
+#nav .nav-nutXuong{
+    font-size: 11px;
+}
+
+#nav > li > a{
+    text-transform: uppercase;
+    color:yellow;
+}
+
+#nav .subnav{
+    list-style:none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+#nav li a{
+
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: inline-block;
+}
+
+#nav > li:hover>a,#nav .subnav li:hover{
+    color:black;
+    background-color: #fff;
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav .subnav{
+    display: none; 
+
+    position: absolute;
+    top:100%;
+    left: 0;
+    min-width: 160px;
+    background-color: purple;
+}
+
+#nav .subnav a{
+    line-height: 38px;
+    color: black;
+}
+
+#nav .subnav:hover{
+    display: block;
+}
