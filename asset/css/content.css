@@ -215,6 +215,7 @@
 
 .your-info input{
     height: 40px;
+    border: 1px solid #ccc;
 }
 
 #name{
