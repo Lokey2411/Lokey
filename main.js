@@ -1,18 +1,14 @@
-var modal = document.getElementsByClassName('modal')[0];
+var modal = document.getElementsByClassName("modal")[0];
 
-var a = document.getElementsByClassName('place-buy-btn');
+document.querySelectorAll(".place-buy-btn").forEach((e) => {
+	e.onclick = function () {
+		modal.style.display = "flex";
+	};
+});
 
-var n = a.length;
-
-for(let i=0;i<n-1;++i){
-    a[i].onclick=function(){
-        modal.style.display = "flex";
-    }
-}
-
-document.getElementById('close').onclick=function(){
-    modal.style.display = "none";
-}
+document.getElementById("close").onclick = function () {
+	modal.style.display = null;
+};
 
 var imageCount = 0;
 
@@ -24,27 +20,35 @@ var imageCount = 0;
 var imageSliderElements = document.querySelectorAll(".slider");
 
 var imgLength = imageSliderElements.length;
-
-let temp = imageSliderElements[imgLength-1];
-
-
-
-
-setInterval(function(){
-
-    //ẩn hiện ảnh
-    if(imageCount == 0){
-        temp.classList.add('hidden-image');
-        imageSliderElements[0].classList.remove('hidden-image');
-        // return;
-    }
-    else{
-        imageSliderElements[imageCount-1].classList.add('hidden-image');
-        imageSliderElements[imageCount].classList.remove('hidden-image');
-        // return;
-    }
-    ++imageCount;
-    if(imageCount == imgLength){
-        imageCount = 0;
-    }
-},3000)
+const headerHeight = document.getElementById("header").clientHeight;
+let temp = imageSliderElements[imgLength - 1];
+var onMenuClick = () => {
+	if (document.getElementById("header").clientHeight === headerHeight) {
+		document.getElementById("header").style.height = "auto";
+	} else {
+		document.getElementById("header").style.height = null;
+	}
+};
+document.querySelectorAll("a[href ^= '#']").forEach((e) => {
+	if (e.nextElementSibling) {
+		e.preventDefault();
+	} else {
+		e.onclick = onMenuClick;
+	}
+});
+setInterval(function () {
+	//ẩn hiện ảnh
+	if (imageCount == 0) {
+		temp.classList.add("hidden-image");
+		imageSliderElements[0].classList.remove("hidden-image");
+		// return;
+	} else {
+		imageSliderElements[imageCount - 1].classList.add("hidden-image");
+		imageSliderElements[imageCount].classList.remove("hidden-image");
+		// return;
+	}
+	++imageCount;
+	if (imageCount == imgLength) {
+		imageCount = 0;
+	}
+}, 3000);

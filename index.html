@@ -1,19 +1,15 @@
 <!DOCTYPE html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale initial-scale=1.0">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>Lokey</title>
         <link rel="shortcut icon" type = "image/png" href="asset/img/goat logo.png">
         <!-- <link rel="stylesheet" href="asset/css/temp.css"> -->
         <link rel="stylesheet" href="https://kit.fontawesome.com/1ce18db8ca.css" crossorigin="anonymous">
         <link rel="stylesheet" href="./asset/css/style.css">
+        <link rel="stylesheet" href="./asset/css/responsive.css">
         <link rel="stylesheet" href="./themify-icons/themify-icons.css">
-        <link rel="stylesheet" href="./asset/css/content.css">
-        <link rel="stylesheet" href="./asset/css/footer.css">
-        <link rel="stylesheet" href="./asset/css/header.css">
-        <link rel="stylesheet" href="./asset/css/nav.css">
-        <link rel="stylesheet" href="./asset/css/slider.css">
-        <link rel="stylesheet" href="asset/css/modal.css">
+        <link rel="stylesheet" href="./asset/css/modal.css">
     </head>
     <body>
         <div id="main">
@@ -21,7 +17,7 @@
                 <!-- Begin nav -->
                 <ul id="nav">
                     <li>
-                        <a href="#">Home</a>
+                        <a href="#" >Home</a>
                     </li>
                     <li>
                         <a href="#content">About Section</a></li>
@@ -30,7 +26,7 @@
                     <li>
                         <a href="#contact">Contact</a></li>
                     <li>
-                        <a href="#" class = "coCon">
+                        <a href="#" class = "coCon" id = "js-bubble-remove">
                             More
                             <i class="nav-nutXuong ti-arrow-circle-down"></i>
                         </a>
@@ -48,6 +44,11 @@
                     <i class="search-icon ti-search">
                     </i>
                 </div>
+                <div class="mobile-menu-btn" onclick="onMenuClick();               
+                ">
+                    <div class="ti-menu menu-icon"></div>
+                 
+                </div>
                 <!-- end:search -->
 
             </div>
@@ -57,25 +58,25 @@
             ">
             <div class="text-content">
                 <h2 class="text-heading">This is title</h2>
-                <div class="text-description">Type any here</div>
+                <div class="text-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis doloremque fugit fuga illum dolor sed, rerum nam fugiat ullam! Dolorem rerum at natus placeat aspernatur debitis explicabo magni similique fuga.</div>
             </div>
             </div>
             <div class="hidden-image slider" style="background:url(asset/img/2125978.png) top center/cover no-repeat;">
             <div class="text-content">
                 <h2 class="text-heading">This is title</h2>
-                <div class="text-description">Type any here</div>
+                <div class="text-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio temporibus, amet eum delectus reiciendis ab? Fugit quo, voluptas voluptatibus neque sit quos, repudiandae dolor officiis voluptates dolorem necessitatibus praesentium eligendi.</div>
             </div>
             </div>
             <div class="hidden-image slider" style="background:url(asset/img/2126241.jpg) top center/cover no-repeat;">
             <div class="text-content">
                 <h2 class="text-heading">This is title</h2>
-                <div class="text-description">Type any here</div>
+                <div class="text-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio temporibus, amet eum delectus reiciendis ab? Fugit quo, voluptas voluptatibus neque sit quos, repudiandae dolor officiis voluptates dolorem necessitatibus praesentium eligendi.</div>
             </div>
             </div>
             <div class="hidden-image slider" style="background:url(asset/img/3595126.png) top center/cover no-repeat; color:#ccc;">
             <div class="text-content">
                 <h2 class="text-heading">This is title</h2>
-                <div class="text-description">Type any here</div>
+                <div class="text-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio temporibus, amet eum delectus reiciendis ab? Fugit quo, voluptas voluptatibus neque sit quos, repudiandae dolor officiis voluptates dolorem necessitatibus praesentium eligendi.</div>
             </div>
             </div>
             <div id="content">
@@ -84,11 +85,11 @@
                     <h2 class="section-heading">About Section</h2>
                     <p class="subHeading">This is about section</p>
                     <p class="about-content">
-                        This is content. Type any here
+                        This is content. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio temporibus, amet eum delectus reiciendis ab? Fugit quo, voluptas voluptatibus neque sit quos, repudiandae dolor officiis voluptates dolorem necessitatibus praesentium eligendi.
                         
                     </p>
-                    <div class="team">
-                        <div class="teamMember">
+                    <div class="team media-center">
+                        <div class="teamMember media-col">
                             <div class="member-item">
                             <p class="name">Your band member here</p>
                             <img src="asset/img/fenrir_background.jpg" alt="Your band member" class = "member-img">
@@ -107,8 +108,6 @@
                 
 <!-- Tour -->
                 <div class="tour-section" id = "tour">
-
-
                     <div class="content-section">
                         <h2 class="section-heading text-white">Tour</h2>
                         <p class="subHeading text-white">This is Tour Section</p>
@@ -120,8 +119,8 @@
 
                         <!-- Places -->
 
-                        <div class="places-list">
-                            <div class="places-item">
+                        <div class="places-list media-col media-center">
+                            <div class="places-item ">
                                 <img src="asset/css/img/Diss 5.jpg" alt="Diss 5">
                                 <div class="place-content">
 
@@ -157,7 +156,7 @@
                         <p class="about-content"></p>
                     </div>
                     
-                    <div id="contact">
+                    <div id="contact" class="media-col">
                         <div class="content">
                             <div class="title">
                                 <h1>Contact</h1>
@@ -168,17 +167,17 @@
                             <table class="my-info">
                                 <thead></thead>
                                 <tbody>
-                                    <tr>
-                                        <td><i class="ti-location-pin"></i></td>
-                                        <td>Hà Nội, Việt Nam</td>
+                                    <tr style="width: 100%;">
+                                        <td style="width: 10%;"><i class="ti-location-pin"></i></td>
+                                        <td style = "width: 90%">Hà Nội, Việt Nam</td>
                                     </tr>
-                                    <tr>
-                                        <td><i class="phone"></i></td>
-                                        <td>1900100có</td>
+                                    <tr style="width: 100%;">
+                                        <td style="width: 10%;"><i class="ti-vector"></i></td>
+                                        <td style = "width: 90%">1900100có</td>
                                     </tr>
-                                    <tr>
-                                        <td><i class="ti-email"></i></td>
-                                        <td>lokey@test.ru</td>
+                                    <tr style="width: 100%;">
+                                        <td style="width: 10%;"><i class="ti-email"></i></td>
+                                        <td style = "width: 90%">lokey@test.ru</td>
                                     </tr>
                                 </tbody>
                             </table>
